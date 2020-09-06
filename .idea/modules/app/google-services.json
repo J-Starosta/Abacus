@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "502851031915",
+    "firebase_url": "https://abacus-90059.firebaseio.com",
+    "project_id": "abacus-90059",
+    "storage_bucket": "abacus-90059.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:502851031915:android:1960895241edeca1f3722e",
+        "android_client_info": {
+          "package_name": "com.example.app_abacus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "502851031915-v2lakcnj78tddfl8p0rgka1c8k1mtkne.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.app_abacus",
+            "certificate_hash": "ffe859bc71c7d6d28dd870a2f5b5472f14361642"
+          }
+        },
+        {
+          "client_id": "502851031915-9cohcpr1lmce4u7b61ls1aqec78qrpb8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBb2QjqVPHx_RE1crKncA-SdRNFnOOTaNM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "502851031915-9cohcpr1lmce4u7b61ls1aqec78qrpb8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

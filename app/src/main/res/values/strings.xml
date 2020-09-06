@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Abacus</string>
+    <string name="app_title">ABACUS</string>
+    <string name="login_page_title">Logowanie</string>
+    <string name="register_page_title">Rejestracja</string>
+    <string name="home_page_title">Obecny miesiąc</string>
+    <string name="calendar_page_title">Lista zmian</string>
+    <string name="podpis_logowanie">Nie masz konta? Załóż je  </string>
+    <string name="podpis_logowanie_2">  teraz!</string>
+    <string name="password_hint">Hasło</string>
+    <string name="user_hint">Nazwa użytkownika</string>
+    <string name="login_button">ZALOGUJ</string>
+    <string name="register_button">ZAREJESTRUJ</string>
+    <string name="confirm_password_hint">Potwierdź hasło</string>
+    <string name="add_day">Dodaj nową zmianę</string>
+    <string name="czas">Czas pracy</string>
+    <string name="zmiany">Liczba zmian</string>
+    <string name="serwis">Serwis</string>
+    <string name="napiwki">Napiwki</string>
+    <string name="wyplata">Wypłata</string>
+    <string name="srednio">Średnio na godzinę</string>
+    <string name="list_day">Lista zmian</string>
+    <string name="email_hint">Adres email</string>
+    <string name="czas_pracy">Czas pracy</string>
+    <string name="seriws">Seriws</string>
+    <string name="data">Data dd/mm/rrrr</string>
+    <string name="month">Miesiąc</string>
+    <string name="day">Dzień</string>
+    <string name="year">Rok</string>
+    <string name="stawka_na_godzin">Stawka na godzinę</string>
+    <string name="spliter">.</string>
+
+    <string-array name="months">
+        <item>Styczeń</item>
+        <item>Luty</item>
+        <item>Marzec</item>
+        <item>Kwiecień</item>
+        <item>Maj</item>
+        <item>Czerwiec</item>
+        <item>Lipiec</item>
+        <item>Sierpień</item>
+        <item>Wrzesień</item>
+        <item>Październik</item>
+        <item>Listopad</item>
+        <item>Grudzeiń</item>
+    </string-array>
+
+    <string-array name="years">
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+        <item>2026</item>
+        <item>2027</item>
+        <item>2028</item>
+        <item>2029</item>
+        <item>2030</item>
+    </string-array>
+
+</resources>

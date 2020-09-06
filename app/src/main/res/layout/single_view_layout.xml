@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/parentLayout">
+
+    <ImageView
+        android:id="@+id/buttonDelete"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/delete"
+        android:layout_gravity="right"
+        android:layout_margin="5dp"/>
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="5dp"/>
+
+
+    <TextView
+        android:id="@+id/valueCzasPracy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textViewDate"
+        android:layout_margin="5dp"/>
+
+
+    <TextView
+        android:id="@+id/valueNapiwki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/valueCzasPracy"
+        android:layout_margin="5dp"/>
+
+
+    <TextView
+        android:id="@+id/valueSerwis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/valueNapiwki"
+        android:layout_margin="5dp"/>
+
+
+
+    <TextView
+        android:id="@+id/valueStawka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/valueSerwis"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="20dp"/>
+</LinearLayout>

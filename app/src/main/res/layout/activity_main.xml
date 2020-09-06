@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/buttonLogout"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/logout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="@string/app_title"
+        android:textColor="@color/gold"
+        android:textSize="60sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.054" />
+    <Button
+        android:id="@+id/button_dodaj_zmiane"
+        android:layout_width="333dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button"
+        android:backgroundTint="#29000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/dodaj_zmiane"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="@id/button_dodaj_zmiane"
+        app:layout_constraintTop_toTopOf="@+id/button_dodaj_zmiane"
+        app:layout_constraintStart_toStartOf="@+id/button_dodaj_zmiane"
+        android:layout_marginLeft="50dp"
+        android:text="@string/add_day"
+        android:textSize="20sp"
+        android:textColor="@color/gray"
+        android:gravity="center_vertical"
+        android:fontFamily="casual"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/dodaj_zmiane"
+        app:layout_constraintBottom_toBottomOf="@id/dodaj_zmiane"
+        app:layout_constraintTop_toTopOf="@+id/dodaj_zmiane"
+        app:layout_constraintEnd_toStartOf="@+id/dodaj_zmiane"
+        android:layout_marginRight="5dp"/>
+
+    <TextView
+        android:id="@+id/page_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="casual"
+        android:text="@string/home_page_title"
+        android:textColor="@color/yellow"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_dodaj_zmiane" />
+
+    <Button
+        android:id="@+id/podkreslenie"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@drawable/podkreslenie"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/page_login"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="390dp"
+        android:layout_marginTop="4dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/podkreslenie">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:id="@+id/row1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/czas_pracy"
+                    android:layout_width="165dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/button"
+                    android:backgroundTint="#29000000"
+                    android:gravity="center"
+                    android:text="@string/czas"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="@+id/row1"
+                    app:layout_constraintTop_toTopOf="@+id/row1" />
+
+                <TextView
+                    android:id="@+id/czas_pracy_value"
+                    android:layout_width="165dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:text="10"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="@+id/czas_pracy"
+                    app:layout_constraintTop_toTopOf="@+id/row1" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/zmiany"
+                    android:layout_width="165dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/button"
+                    android:backgroundTint="#29000000"
+                    android:gravity="center"
+                    android:text="@string/zmiany"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="@+id/row2"
+                    app:layout_constraintTop_toTopOf="@+id/row2" />
+
+                <TextView
+                    android:id="@+id/zmiany_value"
+                    android:layout_width="165dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:text="10"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="@+id/zmiany"
+                    app:layout_constraintTop_toTopOf="@+id/row2" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/serwis"
+                    android:layout_width="165dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/button"
+                    android:backgroundTint="#29000000"
+                    android:gravity="center"
+                    android:text="@string/serwis"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="@+id/row3"
+                    app:layout_constraintTop_toTopOf="@+id/row3" />
+
+                <TextView
+                    android:id="@+id/serwis_value"
+                    android:layout_width="165dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:text="10"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="@+id/serwis"
+                    app:layout_constraintTop_toTopOf="@+id/row3" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/napiwki"
+                    android:layout_width="165dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/button"
+                    android:backgroundTint="#29000000"
+                    android:gravity="center"
+                    android:text="@string/napiwki"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="@+id/row4"
+                    app:layout_constraintTop_toTopOf="@+id/row4" />
+
+                <TextView
+                    android:id="@+id/napiwki_value"
+                    android:layout_width="165dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:text="10"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="@+id/napiwki"
+                    app:layout_constraintTop_toTopOf="@+id/row4" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/wyplata"
+                    android:layout_width="165dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/button"
+                    android:backgroundTint="#29000000"
+                    android:gravity="center"
+                    android:text="@string/wyplata"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="@+id/row5"
+                    app:layout_constraintTop_toTopOf="@+id/row5" />
+
+                <TextView
+                    android:id="@+id/wyplata_value"
+                    android:layout_width="165dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:text="10"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="@+id/wyplata"
+                    app:layout_constraintTop_toTopOf="@+id/row5" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="150dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/srednio"
+                    android:layout_width="165dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/button"
+                    android:backgroundTint="#29000000"
+                    android:gravity="center"
+                    android:text="@string/srednio"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="@+id/row6"
+                    app:layout_constraintTop_toTopOf="@+id/row6" />
+
+                <TextView
+                    android:id="@+id/srednio_value"
+                    android:layout_width="165dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:text="10"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="@+id/srednio"
+                    app:layout_constraintTop_toTopOf="@+id/row6" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        android:backgroundTint="#29000000"
+        app:itemTextColor="@drawable/selection"
+        app:itemIconTint="@drawable/selection"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_navigation" />
+</androidx.constraintlayout.widget.ConstraintLayout>
